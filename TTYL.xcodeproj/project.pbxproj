@@ -13,6 +13,9 @@
 		7794426A26D404020030C7B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7794426926D404020030C7B1 /* Preview Assets.xcassets */; };
 		7794427626D404020030C7B1 /* TTYLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794427526D404020030C7B1 /* TTYLTests.swift */; };
 		7794428126D404020030C7B1 /* TTYLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794428026D404020030C7B1 /* TTYLUITests.swift */; };
+		7794428F26D40C120030C7B1 /* TerminalContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794428E26D40C120030C7B1 /* TerminalContainer.swift */; };
+		7794429126D40D450030C7B1 /* TerminalObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794429026D40D450030C7B1 /* TerminalObjects.swift */; };
+		7794429326D40DD90030C7B1 /* TerminalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794429226D40DD90030C7B1 /* TerminalRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		7794427C26D404020030C7B1 /* TTYLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTYLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794428026D404020030C7B1 /* TTYLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTYLUITests.swift; sourceTree = "<group>"; };
 		7794428226D404020030C7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7794428E26D40C120030C7B1 /* TerminalContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalContainer.swift; sourceTree = "<group>"; };
+		7794429026D40D450030C7B1 /* TerminalObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalObjects.swift; sourceTree = "<group>"; };
+		7794429226D40DD90030C7B1 /* TerminalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				7794426B26D404020030C7B1 /* Info.plist */,
 				7794426C26D404020030C7B1 /* TTYL.entitlements */,
 				7794426826D404020030C7B1 /* Preview Content */,
+				7794428E26D40C120030C7B1 /* TerminalContainer.swift */,
+				7794429026D40D450030C7B1 /* TerminalObjects.swift */,
+				7794429226D40DD90030C7B1 /* TerminalRowView.swift */,
 			);
 			path = TTYL;
 			sourceTree = "<group>";
@@ -261,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7794429326D40DD90030C7B1 /* TerminalRowView.swift in Sources */,
 				7794426526D404000030C7B1 /* ContentView.swift in Sources */,
+				7794428F26D40C120030C7B1 /* TerminalContainer.swift in Sources */,
+				7794429126D40D450030C7B1 /* TerminalObjects.swift in Sources */,
 				7794426326D404000030C7B1 /* TTYLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.ldonovan.TTYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -450,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.ldonovan.TTYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
